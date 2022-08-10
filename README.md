@@ -5,7 +5,7 @@ Create instances of CloudStack more easily with Terraform.
 
 ## Prerequisites
 
-- 테라폼 1.24버전 다운로드 및 전역 변수 설정
+- Download Terraform 1.24 version and set global variables
 
 ## Deploy Using the Terraform CLI
 
