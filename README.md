@@ -1,4 +1,3 @@
-
 # Create CloudStack instance using Terraform
 
 Create instances of CloudStack more easily with Terraform.
@@ -11,6 +10,16 @@ Create instances of CloudStack more easily with Terraform.
 ## How to get api-key
 1. Log in to your cloud stack.
 ![login](./images/login.png) 
+2. Click on the account menu in the left menu.
+![account](./images/account.png)
+3. Select an account to use the api key.
+![admin](./images/admin.png)
+4. Click view user at the bottom of the selected account.
+![view_user](./images/view_user.png)
+5. Select an user to use the api key
+![user_admin](./images/user_admin.png)
+6. get api-key and secret-key
+![api_key](./images/api_key.png)
 
 ## Deploy Using the Terraform CLI
 
