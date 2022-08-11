@@ -20,7 +20,7 @@ Create a local copy of this repository:
 1. Create a `terraform.json` file, and specify the following variables:
 
 ```
-# Authentication
+# terraform.json
 {
 	"generate": {
 		"cloud_platform": "cloudstack",
