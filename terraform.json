@@ -1,0 +1,21 @@
+{
+    "generate": {
+        "cloud_platform": "cloudstack",
+        "auth": {
+            "api_url" : null,
+            "api_key" : null,
+            "secret_key" : null
+        },
+        "vm_info": {
+            "vm_name" : null,
+            "service_offering" : null,
+            "template" : null,
+            "zone" : null,
+            "project" : null,
+            "affinity_group_names" : null,
+            "root_disk_size" : null,
+            "network_id" : null,
+            "security_group_names" : null
+        }
+    }
+}
