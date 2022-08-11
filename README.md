@@ -1,3 +1,4 @@
+
 # Create CloudStack instance using Terraform
 
 Create instances of CloudStack more easily with Terraform.
@@ -5,6 +6,11 @@ Create instances of CloudStack more easily with Terraform.
 ## Prerequisites
 
 - Download Terraform 1.24 version and set global variables
+- You should prepare your cloudstack's api-key and secret-key.
+
+## How to get api-key
+1. Log in to your cloud stack.
+![login](./images/login.png) 
 
 ## Deploy Using the Terraform CLI
 
@@ -20,7 +26,7 @@ Create a local copy of this repository:
 1. Create a `terraform.json` file, and specify the following variables:
 
 ```
-# terraform.json
+# Authentication
 {
 	"generate": {
 		"cloud_platform": "cloudstack",
