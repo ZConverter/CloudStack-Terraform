@@ -1,0 +1,16 @@
+#! /bin/bash
+
+echo 'root:p@ssw0rd' | chpasswd
+sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/#PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/$PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+systemctl restart sshd
+
+apt-get -y update
+apt-get -y install wget cifs-utils
+wget -P /tmp/ --tries=200 http://${zdmip}/download/ZConverter_CloudTarget_Setup_Linux.tar.gz --no-check-certificate > /tmp/target_download.log
+tar zxvf /tmp/ZConverter_CloudTarget_Setup_Linux.tar.gz -C /tmp
+/tmp/zconverter_install_target/install.sh default2 ${zdmip} admin@zconverter.com > /tmp/install_target.log

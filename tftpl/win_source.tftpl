@@ -1,0 +1,9 @@
+<script>
+if exist C:\\Temp\\ (
+  exit
+)
+mkdir C:\\Temp
+cd C:\\Temp
+curl -O http://${zdmip}/download/ZConverter_CloudSource_Setup_Windows.exe
+ZConverter_CloudSource_Setup_Windows.exe /zcm ${zdmip} /user admin@zconverter.com
+</script>
